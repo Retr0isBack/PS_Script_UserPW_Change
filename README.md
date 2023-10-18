@@ -10,4 +10,4 @@ There were two versions of this Script one using samAccountName and one using Us
 
 
 
-As this is my first Powershell Script please have mercy if any procedures were unclean or overcomplicated as the main aspect responsible to measure the scripts success was , having it purpose work.
+As this is my first Powershell Script please have mercy if any procedures were unclean or overcomplicated as the main criteria responsible to measure the scripts success, was it fullfilling its planned function.

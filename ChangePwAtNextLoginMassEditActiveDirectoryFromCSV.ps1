@@ -41,14 +41,23 @@ Import-Csv "C:\Users\dreher-d\OneDrive - fischer\Dokumente\Testmappe.csv" | ForE
 $samAccountName = $_."AffectedUser" 
 
 
+if ( Get-ADUser -Identity $samAccountName -ChangePasswortAtLogon == $false )
+{
+    
 # Force user to reset password at next logon. 
 Set-ADUser -Identity $samAccountName -PasswordNeverExpires $false
 Set-AdUser -Identity $samAccountName -ChangePasswordAtLogon $true
 Write-Host " AD Password has been reset for: "$samAccountName
 
 
+}else{
+
+Write-Host " ChangePasswortAtLogon was already active for: " $samAccountName
 
 
+
+
+}
 }
 #Loopend
 pause

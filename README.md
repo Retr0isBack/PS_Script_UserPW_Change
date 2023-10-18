@@ -4,7 +4,7 @@ Made by Daniel Dreher / Retr0isBack. This Script is free of use for whoever may 
 
 
 
-This Script was created in a successful attempt to force a huge amount of Active Directory accounts to change their passwort at the next login 
+This Script was created in a successful attempt to force a certain amount of Active Directory accounts to change their passwort at the next login 
 It does so by reading out samAccountName's from a .csv file and executes the whole script for each user in a specially named row. The row name can of course be changed and should then be changed in the script . 
 There were two versions of this Script one using samAccountName and one using UserPrincipalName. They have been combined into one Script and as the samAccountName was more convenient to use , the UserPrincipalName part has been commented out.
 

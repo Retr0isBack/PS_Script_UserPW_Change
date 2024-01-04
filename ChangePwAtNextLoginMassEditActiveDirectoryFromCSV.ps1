@@ -16,7 +16,7 @@ Import-Module ActiveDirectory
 
 
 
-Import-Csv "C:\Users\dreher-d\OneDrive - fischer\Dokumente\Testmappe.csv" | ForEach-Object {
+Import-Csv "PATH" | ForEach-Object {
 
 
 
